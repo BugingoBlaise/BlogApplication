@@ -22,7 +22,7 @@ This blog application allows users to create, view, search, and like blog posts.
 
 1. **Clone the repository**:
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/BugingoBlaise/BlogApplication.git
     cd <repository_directory>
     ```
 
