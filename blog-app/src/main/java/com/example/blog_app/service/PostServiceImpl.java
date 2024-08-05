@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class PostService implements IPostService {
+public class PostServiceImpl implements IPostService {
     @Autowired
     private PostRepo postRepo;
 
@@ -59,5 +59,8 @@ public class PostService implements IPostService {
         }
 
 
+    }
+    public List<Post>searchPostByName(String name){
+        return postRepo.findAllByNameContaining(name);
     }
 }

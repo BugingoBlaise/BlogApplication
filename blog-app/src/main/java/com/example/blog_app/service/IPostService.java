@@ -6,7 +6,12 @@ import java.util.List;
 
 public interface IPostService {
     Post postSave(Post post);
-List<Post>getAllPosts();
-Post updateViewCount(Long postId);
+
+    List<Post> getAllPosts();
+
+    Post updateViewCount(Long postId);
+
     Post likePost(Long postId);
+
+    List<Post> searchPostByName(String name);
 }
